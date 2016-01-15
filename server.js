@@ -15,7 +15,7 @@ io.on('connection',function (socket){
 	});
 
 	socket.emit('message',{
-		text: 'Welcome to chat application'
+		text: 'Welcome to EE-chat application'
 	});
 
 });
