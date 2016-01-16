@@ -6,17 +6,15 @@ socket.on('connect',function(){
 
 socket.on('message',function (message){
 	console.log ('new message');
+	var timeMoment = moment.utc(message.timeStamp);
+	console.log(timeMoment.local().format('MMM Do YYYY, h:mm a'));
 	console.log(message.text);
-
-	jQuery('.messages').append('<p>'+ message.text +'</p>');
+	jQuery('.messages').append('<p>' + '<strong style = "color:blue;">' +timeMoment.local().format('h:mm a')+': </strong>'+' '+message.text   +'</p>');
 });
 
 
 // get messages from form
 var $form = jQuery('#messageForm');
-
-
-
 $form.on('submit',function (event) {
 	event.preventDefault();
 
