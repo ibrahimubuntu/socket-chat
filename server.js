@@ -20,6 +20,7 @@ io.on('connection',function (socket){
 	});
 
 	socket.emit('message',{
+		name: 'System',
 		timeStamp:moment().valueOf(),
 		text: 'Welcome to EE-chat application'
 	});
