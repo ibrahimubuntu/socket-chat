@@ -7,43 +7,51 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
-		<div class="container">
-		<div class="vertical-center">
-			<div class="row">
-				<div class="col-md-4 col-md-offset-4 well">						
-					<h1 class="text-center">
-						Join Chat
-					</h1>
-					<form id="details" action="/chat.html">
-					 <div class="form-group">
-					 	<label>Display Name</label>
-					 	<div class="input-group">
-					 		<span class="input-group-addon" >
-					 			<i class = "glyphicon glyphicon-user">
-					 			</i>
-					 		</span>
-					 		<input type="text" name="name" class="form-control" />	
-					 	</div>
-					 </div>
-					<div class="form-group">
-						<label>Enter Room Name</label>
-						<div class="input-group">
-					 		<span class="input-group-addon" >
-					 			<i class = "glyphicon glyphicon-comment">
-					 			</i>
-					 		</span>
-						<input type="text" name="room" class="form-control" />
+		<div class="indexStyle">
+			<div class="container">
+			<div class="vertical-center">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 well">						
+						<h1 class="text-center">
+							Join Chat
+						</h1>
+						<form id="details" action="/chat.html">
+						 <div class="form-group">
+						 	<label>Display Name</label>
+						 	<div class="input-group">
+						 		<span class="input-group-addon" >
+						 			<i class = "glyphicon glyphicon-user">
+						 			</i>
+						 		</span>
+						 		<input type="text" name="name" class="form-control" />	
+						 	</div>
+						 </div>
+						<div class="form-group">
+							<label>Enter Room Name</label>
+							<div class="input-group">
+						 		<span class="input-group-addon" >
+						 			<i class = "glyphicon glyphicon-comment">
+						 			</i>
+						 		</span>
+							<input type="text" name="room" class="form-control" />
+							</div>
+						</div>	
+							<div class="form-group">
+								<input type="submit" value="Join Chat" class="btn btn-danger btn-block" />
+							</div>
+							<div  class="alert alert-danger" role="alert">
+								<p>
+									Programmed and Desgined By: <a href="http://eeibrahim.herokuapp.com/" style="color : red">Eng.Ibrahim Abed-alghafer</a>
+								</p>						
+							</div>				
+						</form>
 						</div>
-					</div>	
-					<div class="form-group">
-						<input type="submit" value="Join Chat" class="btn btn-success btn-block" />
 					</div>
-					</form>
 				</div>
 			</div>
 		</div>
-	</div>
 	</body>
 </html>

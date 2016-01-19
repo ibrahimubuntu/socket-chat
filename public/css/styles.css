@@ -13,3 +13,16 @@ h1
 .messages p {
 	margin: 6px 0;
 }
+
+.well
+{
+	background-color: navajowhite;
+}
+.indexStyle
+{
+	background-color: darkgray;
+}
+.chatStyle
+{
+	background-color: darkgray;
+}
